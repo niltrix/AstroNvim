@@ -87,6 +87,9 @@ local config = {
       --     require("lsp_signature").setup()
       --   end,
       -- },
+      {
+        "faith/vim-go",
+      },
     },
     -- All other entries override the setup() call for default plugins
     ["null-ls"] = function(config)
@@ -169,6 +172,7 @@ local config = {
     -- enable servers that you already have installed without lsp-installer
     servers = {
       -- "pyright"
+      "gopls"
     },
     -- add to the server on_attach function
     -- on_attach = function(client, bufnr)
@@ -193,6 +197,16 @@ local config = {
       --     },
       --   },
       -- },
+      gopls = {
+        settings = {
+          experimentalPostfixCompletions = true,
+		        analyses = {
+		          unusedparams = true,
+		          shadow = true,
+		        },
+		      staticcheck = true,
+		    },
+      },
     },
   },
 
