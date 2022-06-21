@@ -90,6 +90,31 @@ local config = {
       {
         "faith/vim-go",
       },
+      {
+        "simrat39/rust-tools.nvim",
+        after = { "nvim-lspconfig", "nvim-lsp-installer" },
+        -- Is configured via the server_registration_override installed below!
+        config = function()
+          local extension_path = vim.fn.stdpath "data" .. "/dapinstall/codelldb/extension"
+          local codelldb_path = extension_path .. "/adapter/codelldb"
+          local liblldb_path = extension_path .. "/lldb/lib/liblldb.so"
+
+          require("rust-tools").setup {
+            server = astronvim.lsp.server_settings "rust_analyzer",
+            -- dap = {
+            --   adapter = require("rust-tools.dap").get_codelldb_adapter(codelldb_path, liblldb_path),
+            -- },
+            tools = {
+              inlay_hints = {
+                parameter_hints_prefix = "  ",
+                other_hints_prefix = "  ",
+              },
+            },
+          }
+        end,
+      },
+      -- disable plugins:
+      ["declancm/cinnamon.nvim"] = { disable = true }, -- Slow scrolling
     },
     -- All other entries override the setup() call for default plugins
     ["null-ls"] = function(config)
@@ -221,6 +246,7 @@ local config = {
   polish = function()
     -- Set key bindings
     vim.keymap.set("n", "<C-s>", ":w!<CR>")
+    vim.api.nvim_set_var("python3_host_prog", "/Users/ibyeongjin/.pyenv/versions/pynvim/bin/python3")
 
     -- Set autocommands
     vim.api.nvim_create_augroup("packer_conf", { clear = true })
