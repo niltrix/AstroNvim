@@ -87,12 +87,12 @@ local config = {
       --     require("lsp_signature").setup()
       --   end,
       -- },
-      {
-        "faith/vim-go",
-        config = function ()
-          require("vim-go").setup()
-        end,
-      },
+      -- {
+      --   "faith/vim-go",
+      --   config = function ()
+      --     require("vim-go").setup()
+      --   end,
+      -- },
       -- {
       --   "simrat39/rust-tools.nvim",
       --   after = { "nvim-lspconfig", "nvim-lsp-installer" },
@@ -250,6 +250,17 @@ local config = {
     -- Set key bindings
     vim.keymap.set("n", "<C-s>", ":w!<CR>")
     vim.api.nvim_set_var("python3_host_prog", "/Users/ibyeongjin/.pyenv/versions/pynvim/bin/python3")
+    -- vim.keymap.set("n", "<f1>", ":GoBuild<CR>")
+    -- vim.keymap.set("n", "<f2>", ":GoRun %<CR>")
+    -- vim.keymap.set("n", "<leader>bp", ":GoDebugBreakpoint<CR>")
+    -- vim.keymap.set("n", "<f3>", ":GoDebugStart<CR>")
+    -- -- vim.keymap.set("n", "<f5>", ":GoDebugTest<CR>")
+    -- vim.keymap.set("n", "<f6>", ":GoDebugStop<CR>")
+    -- vim.keymap.set("n", "<f5>", ":GoDebugContinue<CR>")
+    -- vim.keymap.set("n", "<f10>", ":GoDebugNext<CR>")
+    -- vim.keymap.set("n", "<f11>", ":GoDebugStep<CR>")
+    -- vim.keymap.set("n", "<S-f11>", ":GoDebugStepOut<CR>")
+    -- vim.keymap.set("n", "<f12>", ":GoDebugPrint %s<CR>")
 
     -- Set autocommands
     vim.api.nvim_create_augroup("packer_conf", { clear = true })
