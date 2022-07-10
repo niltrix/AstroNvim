@@ -24,6 +24,8 @@ local config = {
   options = {
     opt = {
       relativenumber = true, -- sets vim.opt.relativenumber
+      shiftwidth = 4,
+      tabstop = 4,
     },
     g = {
       mapleader = " ", -- sets vim.g.mapleader
@@ -89,9 +91,47 @@ local config = {
       -- },
       -- {
       --   "faith/vim-go",
-      --   config = function ()
-      --     require("vim-go").setup()
-      --   end,
+        -- config = function ()
+        --   require("vim-go").setup()
+        -- end,
+      -- },
+      -- {
+        -- "anuvyklack/hydra.nvim",
+        -- config = function ()
+        --   require("hydra").setup {
+        --     name = "Change / Resize Window",
+        --     mode = { "n" },
+        --           body = "<C-w>",
+        --           config = {
+        -- 	          -- color = "pink",
+        --           },
+        --           heads = {
+        -- 	          -- move between windows
+        -- 	          { "<C-h>", "<C-w>h" },
+        -- 	          { "<C-j>", "<C-w>j" },
+        -- 	          { "<C-k>", "<C-w>k" },
+        -- 	          { "<C-l>", "<C-w>l" },
+        --
+        -- 	          -- resizing window
+        -- 	          { "H", "<C-w>3<" },
+        -- 	          { "L", "<C-w>3>" },
+        -- 	          { "K", "<C-w>2+" },
+        -- 	          { "J", "<C-w>2-" },
+        --
+        -- 	          -- equalize window sizes
+        -- 	          { "e", "<C-w>=" },
+        --
+        -- 	          -- close active window
+        -- 	          { "Q", ":q<cr>" },
+        -- 	          { "<C-q>", ":q<cr>" },
+        --
+        -- 	          -- exit this Hydra
+        -- 	          { "q", nil, { exit = true, nowait = true } },
+        -- 	          { ";", nil, { exit = true, nowait = true } },
+        -- 	          { "<Esc>", nil, { exit = true, nowait = true } },
+        --           },
+        --   }
+        -- end,
       -- },
       -- {
       --   "simrat39/rust-tools.nvim",
@@ -145,7 +185,7 @@ local config = {
       return config -- return final config table
     end,
     treesitter = {
-      ensure_installed = { "lua" },
+      ensure_installed = { "lua"},
     },
     ["nvim-lsp-installer"] = {
       ensure_installed = { "sumneko_lua" },
