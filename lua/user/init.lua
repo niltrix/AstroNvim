@@ -95,6 +95,14 @@ local config = {
         --   require("vim-go").setup()
         -- end,
       -- },
+      ["faith/vim-go"] = {
+        go_highlight_types = 1,
+        go_highlight_fields = 1,
+        go_highlight_functions = 1,
+        go_highlight_function_calls = 1,
+        go_highlight_operators = 1,
+        go_highlight_extra_types = 1,
+      },
       -- {
         -- "anuvyklack/hydra.nvim",
         -- config = function ()
@@ -301,7 +309,13 @@ local config = {
     vim.keymap.set("n", "<f9>", ":GoDebugStep<CR>")
     vim.keymap.set("n", "<f10>", ":GoDebugStepOut<CR>")
     -- vim.keymap.set("n", "<f12>", ":GoDebugPrint %s<CR>")
-
+    vim.g.go_highlight_types = 1
+    vim.g.go_highlight_fields = 1
+    vim.g.go_highlight_functions = 1
+    vim.g.go_highlight_function_calls = 1
+    vim.g.go_highlight_operators = 1
+    vim.g.go_highlight_extra_types = 1
+    vim.g.go_highlight_generate_tags = 1
     -- Set autocommands
     vim.api.nvim_create_augroup("packer_conf", { clear = true })
     vim.api.nvim_create_autocmd("BufWritePost", {
