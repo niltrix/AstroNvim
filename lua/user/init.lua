@@ -95,14 +95,14 @@ local config = {
         --   require("vim-go").setup()
         -- end,
       -- },
-      ["faith/vim-go"] = {
-        go_highlight_types = 1,
-        go_highlight_fields = 1,
-        go_highlight_functions = 1,
-        go_highlight_function_calls = 1,
-        go_highlight_operators = 1,
-        go_highlight_extra_types = 1,
-      },
+      -- ["faith/vim-go"] = {
+      --   go_highlight_types = 1,
+      --   go_highlight_fields = 1,
+      --   go_highlight_functions = 1,
+      --   go_highlight_function_calls = 1,
+      --   go_highlight_operators = 1,
+      --   go_highlight_extra_types = 1,
+      -- },
       -- {
         -- "anuvyklack/hydra.nvim",
         -- config = function ()
@@ -301,13 +301,13 @@ local config = {
     vim.keymap.set("n", "<f1>", ":GoBuild<CR>")
     vim.keymap.set("n", "<f2>", ":GoRun %<CR>")
     vim.keymap.set("n", "<leader>bp", ":GoDebugBreakpoint<CR>")
-    vim.keymap.set("n", "<f5>", ":GoDebugStart<CR>")
-    vim.keymap.set("n", "<f12>", ":GoDebugTest<CR>")
     vim.keymap.set("n", "<f4>", ":GoDebugStop<CR>")
+    vim.keymap.set("n", "<f5>", ":GoDebugStart<CR>")
     vim.keymap.set("n", "<f6>", ":GoDebugContinue<CR>")
     vim.keymap.set("n", "<f7>", ":GoDebugNext<CR>")
     vim.keymap.set("n", "<f9>", ":GoDebugStep<CR>")
     vim.keymap.set("n", "<f10>", ":GoDebugStepOut<CR>")
+    vim.keymap.set("n", "<f12>", ":GoDebugTest<CR>")
     -- vim.keymap.set("n", "<f12>", ":GoDebugPrint %s<CR>")
     vim.g.go_highlight_types = 1
     vim.g.go_highlight_fields = 1
