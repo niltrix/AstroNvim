@@ -91,9 +91,9 @@ local config = {
       -- },
       -- {
       --   "faith/vim-go",
-        -- config = function ()
-        --   require("vim-go").setup()
-        -- end,
+      -- config = function ()
+      --   require("vim-go").setup()
+      -- end,
       -- },
       -- ["faith/vim-go"] = {
       --   go_highlight_types = 1,
@@ -104,42 +104,42 @@ local config = {
       --   go_highlight_extra_types = 1,
       -- },
       -- {
-        -- "anuvyklack/hydra.nvim",
-        -- config = function ()
-        --   require("hydra").setup {
-        --     name = "Change / Resize Window",
-        --     mode = { "n" },
-        --           body = "<C-w>",
-        --           config = {
-        -- 	          -- color = "pink",
-        --           },
-        --           heads = {
-        -- 	          -- move between windows
-        -- 	          { "<C-h>", "<C-w>h" },
-        -- 	          { "<C-j>", "<C-w>j" },
-        -- 	          { "<C-k>", "<C-w>k" },
-        -- 	          { "<C-l>", "<C-w>l" },
-        --
-        -- 	          -- resizing window
-        -- 	          { "H", "<C-w>3<" },
-        -- 	          { "L", "<C-w>3>" },
-        -- 	          { "K", "<C-w>2+" },
-        -- 	          { "J", "<C-w>2-" },
-        --
-        -- 	          -- equalize window sizes
-        -- 	          { "e", "<C-w>=" },
-        --
-        -- 	          -- close active window
-        -- 	          { "Q", ":q<cr>" },
-        -- 	          { "<C-q>", ":q<cr>" },
-        --
-        -- 	          -- exit this Hydra
-        -- 	          { "q", nil, { exit = true, nowait = true } },
-        -- 	          { ";", nil, { exit = true, nowait = true } },
-        -- 	          { "<Esc>", nil, { exit = true, nowait = true } },
-        --           },
-        --   }
-        -- end,
+      -- "anuvyklack/hydra.nvim",
+      -- config = function ()
+      --   require("hydra").setup {
+      --     name = "Change / Resize Window",
+      --     mode = { "n" },
+      --           body = "<C-w>",
+      --           config = {
+      -- 	          -- color = "pink",
+      --           },
+      --           heads = {
+      -- 	          -- move between windows
+      -- 	          { "<C-h>", "<C-w>h" },
+      -- 	          { "<C-j>", "<C-w>j" },
+      -- 	          { "<C-k>", "<C-w>k" },
+      -- 	          { "<C-l>", "<C-w>l" },
+      --
+      -- 	          -- resizing window
+      -- 	          { "H", "<C-w>3<" },
+      -- 	          { "L", "<C-w>3>" },
+      -- 	          { "K", "<C-w>2+" },
+      -- 	          { "J", "<C-w>2-" },
+      --
+      -- 	          -- equalize window sizes
+      -- 	          { "e", "<C-w>=" },
+      --
+      -- 	          -- close active window
+      -- 	          { "Q", ":q<cr>" },
+      -- 	          { "<C-q>", ":q<cr>" },
+      --
+      -- 	          -- exit this Hydra
+      -- 	          { "q", nil, { exit = true, nowait = true } },
+      -- 	          { ";", nil, { exit = true, nowait = true } },
+      -- 	          { "<Esc>", nil, { exit = true, nowait = true } },
+      --           },
+      --   }
+      -- end,
       -- },
       -- {
       --   "simrat39/rust-tools.nvim",
@@ -169,94 +169,94 @@ local config = {
         config = function()
           require("catppuccin").setup {
             dim_inactive = {
-		          enabled = false,
-		          shade = "dark",
-		          percentage = 0.15,
-	          },
-	          transparent_background = false,
-	          term_colors = false,
-	          compile = {
-		          enabled = false,
-		          path = vim.fn.stdpath "cache" .. "/catppuccin",
-	          },
-	          styles = {
-		          comments = { "italic" },
-		          conditionals = { "italic" },
-		          loops = {},
-		          functions = {},
-		          keywords = {},
-		          strings = {},
-		          variables = {},
-		          numbers = {},
-		          booleans = {},
-		          properties = {},
-		          types = {},
-		          operators = {},
-	          },
-	          integrations = {
-		          treesitter = true,
-		          native_lsp = {
-			          enabled = true,
-			          virtual_text = {
-				          errors = { "italic" },
-				          hints = { "italic" },
-				          warnings = { "italic" },
-				          information = { "italic" },
-			          },
-			          underlines = {
-				          errors = { "underline" },
-				          hints = { "underline" },
-				          warnings = { "underline" },
-				          information = { "underline" },
-			          },
-		          },
-		          coc_nvim = false,
-		          lsp_trouble = false,
-		          cmp = true,
-		          lsp_saga = false,
-		          gitgutter = false,
-		          gitsigns = true,
-		          leap = false,
-		          telescope = true,
-		          nvimtree = {
-			          enabled = true,
-			          show_root = true,
-			          transparent_panel = false,
-		          },
-		          neotree = {
-			          enabled = false,
-			          show_root = true,
-			          transparent_panel = false,
-		          },
-		          dap = {
-			          enabled = false,
-			          enable_ui = false,
-		          },
-		          which_key = false,
-		          indent_blankline = {
-			          enabled = true,
-			          colored_indent_levels = false,
-		          },
-		          dashboard = true,
-		          neogit = false,
-		          vim_sneak = false,
-		          fern = false,
-		          barbar = false,
-		          bufferline = true,
-		          markdown = true,
-		          lightspeed = false,
-		          ts_rainbow = false,
-		          hop = false,
-		          notify = true,
-		          telekasten = true,
-		          symbols_outline = true,
-		          mini = false,
-		          aerial = false,
-		          vimwiki = true,
-		          beacon = true,
-	          },
-	          color_overrides = {},
-	          custom_highlights = {},
+              enabled = false,
+              shade = "dark",
+              percentage = 0.15,
+            },
+            transparent_background = false,
+            term_colors = false,
+            compile = {
+              enabled = false,
+              path = vim.fn.stdpath "cache" .. "/catppuccin",
+            },
+            styles = {
+              comments = { "italic" },
+              conditionals = { "italic" },
+              loops = {},
+              functions = {},
+              keywords = {},
+              strings = {},
+              variables = {},
+              numbers = {},
+              booleans = {},
+              properties = {},
+              types = {},
+              operators = {},
+            },
+            integrations = {
+              treesitter = true,
+              native_lsp = {
+                enabled = true,
+                virtual_text = {
+                  errors = { "italic" },
+                  hints = { "italic" },
+                  warnings = { "italic" },
+                  information = { "italic" },
+                },
+                underlines = {
+                  errors = { "underline" },
+                  hints = { "underline" },
+                  warnings = { "underline" },
+                  information = { "underline" },
+                },
+              },
+              coc_nvim = false,
+              lsp_trouble = false,
+              cmp = true,
+              lsp_saga = false,
+              gitgutter = false,
+              gitsigns = true,
+              leap = false,
+              telescope = true,
+              nvimtree = {
+                enabled = true,
+                show_root = true,
+                transparent_panel = false,
+              },
+              neotree = {
+                enabled = false,
+                show_root = true,
+                transparent_panel = false,
+              },
+              dap = {
+                enabled = false,
+                enable_ui = false,
+              },
+              which_key = false,
+              indent_blankline = {
+                enabled = true,
+                colored_indent_levels = false,
+              },
+              dashboard = true,
+              neogit = false,
+              vim_sneak = false,
+              fern = false,
+              barbar = false,
+              bufferline = true,
+              markdown = true,
+              lightspeed = false,
+              ts_rainbow = false,
+              hop = false,
+              notify = true,
+              telekasten = true,
+              symbols_outline = true,
+              mini = false,
+              aerial = false,
+              vimwiki = true,
+              beacon = true,
+            },
+            color_overrides = {},
+            custom_highlights = {},
           }
         end,
       },
@@ -289,7 +289,7 @@ local config = {
       return config -- return final config table
     end,
     treesitter = {
-      ensure_installed = { "lua"},
+      ensure_installed = { "lua" },
     },
     ["nvim-lsp-installer"] = {
       ensure_installed = { "sumneko_lua" },
@@ -372,12 +372,12 @@ local config = {
       gopls = {
         settings = {
           experimentalPostfixCompletions = true,
-		        analyses = {
-		          unusedparams = true,
-		          shadow = true,
-		        },
-		      staticcheck = true,
-		    },
+          analyses = {
+            unusedparams = true,
+            shadow = true,
+          },
+          staticcheck = true,
+        },
       },
     },
   },
@@ -396,7 +396,8 @@ local config = {
     vim.cmd [[colorscheme catppuccin]]
     -- Set key bindings
     vim.keymap.set("n", "<C-s>", ":w!<CR>")
-    vim.api.nvim_set_var("python3_host_prog", "/Users/ibyeongjin/.pyenv/versions/pynvim/bin/python3")
+    -- vim.api.nvim_set_var("python3_host_prog", "/Users/ibyeongjin/.pyenv/versions/pynvim/bin/python3")
+    vim.api.nvim_set_var("python3_host_prog", "/opt/homebrew/Caskroom/miniforge/base/envs/pynvim/bin/python3")
     vim.keymap.set("n", "<f1>", ":GoBuild<CR>")
     vim.keymap.set("n", "<f2>", ":GoRun %<CR>")
     vim.keymap.set("n", "<f3>", ":GoDebugBreakpoint<CR>")
