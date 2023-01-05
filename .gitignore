@@ -1,5 +1,5 @@
-colors/*
 !colors/default_theme.lua
+<<<<<<< HEAD
 plugin
 <<<<<<< HEAD
 =======
@@ -7,4 +7,13 @@ docs
 lua/user
 >>>>>>> upstream/main
 lua/packer_compiled.lua
+=======
+colors/*
+docs
+>>>>>>> upstream/main
 ginit.vim
+lua/packer_compiled.lua
+lua/user
+plugin
+ftplugin
+spell
